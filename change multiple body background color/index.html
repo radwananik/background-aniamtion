@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css"> </head>
+
+<body>
+    <select name="" id="list">
+        <option value="#333fff">blue</option>
+        <option value="#9bd5fe">Sky value</option>
+        <option value="#000000">Black</option>
+        <option value="#989878">Sky value</option>
+    </select>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+    
+<!--  multiple background color  -->
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var color = $('#list').val();
+            $('body').css('background', color);
+            $('#list').change(function () {
+                var color = $('#list').val();
+                $('body').css('background', color);
+            });
+        });
+    </script>
+</body>
+
+</html>
